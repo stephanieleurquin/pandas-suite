@@ -1,0 +1,14 @@
+import pandas as pd
+
+# créer un petit dataset
+data = {
+    "nom": ["Dupont", "Leclerc", "Dupont", "Durand"],
+    "prenom": ["Alice", "Sophie", "Samuel", "Luc"],
+    "ville": ["Liège", "Namur", "Liège", "Liège"],
+    "montant_achat": [150.5, 180, 120, 130]
+}
+
+df = pd.DataFrame(data)
+
+# afficher les données
+print(df)
