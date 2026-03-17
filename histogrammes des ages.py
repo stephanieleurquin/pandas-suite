@@ -25,6 +25,7 @@ axs[2].hist(ages, bins=5, color='skyblue', edgecolor='black')
 axs[2].set_title("Histogramme des âges")
 axs[2].set_xlabel("Âge")
 axs[2].set_ylabel("Nombre de personnes")
+# Enregistrer le graphique
+plt.savefig("histogramme_ages.png", dpi=150)  # dpi = qualité
+plt.show()
 
-plt.tight_layout()  # ajuste l'espacement
-plt.show()          # tout s'affiche dans **une seule fenêtre**
