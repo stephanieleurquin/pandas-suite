@@ -26,6 +26,8 @@ axs[2].set_title("Histogramme des âges")
 axs[2].set_xlabel("Âge")
 axs[2].set_ylabel("Nombre de personnes")
 # Enregistrer le graphique
-plt.savefig("histogramme_ages.png", dpi=150)  # dpi = qualité
+img = mpimg.imread("moyennenotes eleves.png")
+plt.imshow(img)
+plt.axis('off')  # masque les axes
 plt.show()
 
